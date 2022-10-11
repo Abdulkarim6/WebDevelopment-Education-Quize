@@ -1,4 +1,8 @@
 .quizTopic{
-    background-color: aqua;
+    background-color:lightgrey;
     margin: 5px;
+}
+.quizTopic img{
+    height: 150px;
+
 }

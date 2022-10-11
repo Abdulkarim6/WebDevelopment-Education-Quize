@@ -15,6 +15,14 @@ const Navbar = () => {
                     <Link to={'/blog'}>Blog</Link>
                 </div>
             </div>
+            <header className='header-container'>
+                <div className='author-img'>
+                    {/* <img src="../../author.jpg" alt="" /> */}
+                </div>
+                <div className='author-inf'>
+                    <h2>info</h2>
+                </div>
+            </header>
         </nav>
     );
 };
