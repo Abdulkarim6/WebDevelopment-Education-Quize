@@ -1,0 +1,17 @@
+.nav-container{
+    background-color: rgb(31, 27, 27);
+    padding: 3px 40px 3px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
