@@ -5,6 +5,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Topics from './components/Topics/Topics';
 import Quizes from './components/Quizes/Quizes';
+import AuthorInfo from './components/AuthorInfo/AuthorInfo';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,7 +26,8 @@ function App() {
         { path: '/statics', element: <Statistics></Statistics> },
         { path: '/blog', element: <Blog></Blog> }
       ]
-    }
+    },
+    // {path: '/', element: <AuthorInfo></AuthorInfo> }
   ])
   return (
     <div>

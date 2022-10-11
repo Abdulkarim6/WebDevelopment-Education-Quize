@@ -1,32 +1,36 @@
 import React from 'react';
-import './Quize.css'
+import './Quize.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Quize = ({ ques }) => {
-    // console.log(ques);
-    const { question, options } = ques;
+    const { question, options, correctAnswer } = ques;
+    // console.log(ques, question, options);
+    const hendalCheckQuize = (option) => {
+        if (correctAnswer === option) {
+            toast.success('Answer Correct')
+        }
+        else {
+            toast.error('Answer false')
+        }
+    }
     return (
         <div className='Quize'>
-            <h4>name :{question} </h4>
+            <h4>Quiz :{question.slice(3, -4)} </h4>
             <div className='quiz-container'>
                 {
-                    options.map(option => <ShowQuize option={option} region={option.region}></ShowQuize>)
+                    options.map((option, index) =>
+                        <button onClick={() => hendalCheckQuize(option)}
+                            key={index}>
+                            {option}
+                            <Toaster
+                                reverseOrder={false}
+                            />
+                        </button>)
                 }
             </div>
         </div>
     );
 };
-function ShowQuize({ option }) {
-    return (
-        <div className='quiz-option'>
-            <button>
-                <ul>
-                    <li className='circle'>
-                        {option}
-                    </li>
-                </ul>
-            </button>
-        </div>
-    )
-}
+
 
 export default Quize;
