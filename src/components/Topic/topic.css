@@ -1,8 +1,14 @@
 .quizTopic{
     background-color:lightgrey;
+    padding: 5px;
     margin: 5px;
 }
 .quizTopic img{
     height: 150px;
 
+}
+.btn-quiz{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
