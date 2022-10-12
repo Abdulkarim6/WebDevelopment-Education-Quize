@@ -27,6 +27,12 @@ function App() {
         { path: '/about', element: <AuthorInfo></AuthorInfo> },
         { path: '/blog', element: <Blog></Blog> }
       ]
+    },
+    {
+      path: '*',
+      element: <div>
+        <h1 className='text-2xl font-bold'>Oops! Sorry, This page not found 404</h1>
+      </div>
     }
   ])
   return (

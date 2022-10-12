@@ -10,7 +10,7 @@ const AuthorInfo = () => {
                     <img src={authorLogo} alt="" />
                 </div>
                 <div className='author-inf'>
-                    <h2>Abdul Karim</h2>
+                    <h2 className='text-2xl font-semibold mt-4'>Abdul Karim</h2>
                     <p>Junior Web developer</p>
                 </div>
             </header>

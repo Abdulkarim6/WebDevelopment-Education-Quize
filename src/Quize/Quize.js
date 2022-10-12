@@ -20,7 +20,7 @@ const Quize = ({ ques }) => {
     return (
         <div className='Quize'>
             <div className='quize-name'>
-                <h4>Quiz :{question.slice(3, -4)} </h4>
+                <h4 className='text-lg font-semibold'>Quiz :{question.slice(3, -4)} </h4>
                 <button onClick={handleShowCorrectAns}><EyeIcon className="h-6 w-6 text-blue-500" /></button>
             </div>
             <div className='quiz-container'>

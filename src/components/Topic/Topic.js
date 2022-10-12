@@ -9,12 +9,12 @@ const Topic = ({ quizTopic }) => {
     return (
         <div className='quizTopic'>
             <img src={logo} alt="" />
-            <div className='quiz-info'>
-                <h2>{name}</h2>
+            <div className='quiz-info mt-4'>
+                <h2 className='text-lg font-semibold'>{name}</h2>
                 <h4>Quize : {total} </h4>
             </div>
-            
-            <div className='btn-quiz'>
+
+            <div className='btn-quiz mt-2'>
                 <Link to={`/quizTopic/${id}`}>
                     <button>Start Quiz</button>
                 </Link>
