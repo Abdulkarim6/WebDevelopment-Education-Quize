@@ -2,9 +2,13 @@
     padding: 15px;
     background-color: lightgrey;
     margin: 15px;
-
+    border-radius: 10px;
 }
-
+.quize-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 .quiz-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

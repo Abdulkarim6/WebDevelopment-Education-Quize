@@ -11,7 +11,9 @@ const Quizes = () => {
 
     return (
         <div className='quizes-container'>
-            <div><h2>quize of : {name}</h2></div>
+            <div className='quizes-name'>
+                <h2>Quize of {name}</h2>
+            </div>
             <div>
                 {
                     questions.map(ques => <Quize ques={ques} key={ques.id}></Quize>)

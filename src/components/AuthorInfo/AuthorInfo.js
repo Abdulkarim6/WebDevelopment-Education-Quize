@@ -4,8 +4,8 @@ import authorLogo from '../../author.jpg'
 
 const AuthorInfo = () => {
     return (
-        <div>
-            <header className='header-container'>
+        <div  className='header-container'>
+            <header className='header-info'>
                 <div className='author-img'>
                     <img src={authorLogo} alt="" />
                 </div>

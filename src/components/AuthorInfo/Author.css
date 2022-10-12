@@ -1,14 +1,27 @@
-.header-container {
+.header-container{
+    margin: 30px;
+}
+.header-info {
     display: flex;
-    justify-content: center;
+    justify-content:start;
     margin: 5px auto;
+    padding-left: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
 }
 
 .author-img {
-    margin-right: 20px;
+    padding: 5px;
+    margin-right: 50px;
 }
 
 .author-img img {
     height: 160px;
     width: 170px;
+}
+@media screen and (max-width : 667px) {
+    .header-info {
+        flex-direction: column;
+    }
 }

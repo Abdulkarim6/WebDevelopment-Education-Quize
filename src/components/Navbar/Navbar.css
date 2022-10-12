@@ -1,18 +1,19 @@
-.nav-container{
+.nav-container {
     background-color: rgb(31, 27, 27);
-    padding: 3px 40px 3px 40px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
 }
-.logo h2{
+
+.logo h2 {
     color: white;
     font-size: 25px;
     font-weight: bold;
 }
-.menu a{
+
+.menu a {
     color: white;
     margin: 15px;
     text-decoration: none;
 }
-

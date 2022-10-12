@@ -1,11 +1,15 @@
 import React from 'react';
 import './Quize.css';
 import toast, { Toaster } from 'react-hot-toast';
+import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Quize = ({ ques }) => {
     const { question, options, correctAnswer } = ques;
     // console.log(ques, question, options);
-    const hendalCheckQuize = (option) => {
+    const handleShowCorrectAns =() =>{
+        toast.success(correctAnswer)
+    }
+    const handleCheckQuize = (option) => {
         if (correctAnswer === option) {
             toast.success('Answer Correct')
         }
@@ -15,11 +19,14 @@ const Quize = ({ ques }) => {
     }
     return (
         <div className='Quize'>
-            <h4>Quiz :{question.slice(3, -4)} </h4>
+            <div className='quize-name'>
+                <h4>Quiz :{question.slice(3, -4)} </h4>
+                <button onClick={handleShowCorrectAns}><EyeIcon className="h-6 w-6 text-blue-500" /></button>
+            </div>
             <div className='quiz-container'>
                 {
                     options.map((option, index) =>
-                        <button onClick={() => hendalCheckQuize(option)}
+                        <button onClick={() => handleCheckQuize(option)}
                             key={index}>
                             {option}
                             <Toaster
