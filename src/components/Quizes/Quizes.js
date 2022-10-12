@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quize from '../../Quize/Quize';
+import './Quizes.css'
 
 const Quizes = () => {
     const quizes = useLoaderData();
@@ -9,11 +10,13 @@ const Quizes = () => {
     // console.log(name, questions);
 
     return (
-        <div>
-            <h2>quize of : {name}</h2>
-            {
-                questions.map(ques => <Quize ques={ques} key={ques.id}></Quize>)
-            }
+        <div className='quizes-container'>
+            <div><h2>quize of : {name}</h2></div>
+            <div>
+                {
+                    questions.map(ques => <Quize ques={ques} key={ques.id}></Quize>)
+                }
+            </div>
         </div>
     );
 };
