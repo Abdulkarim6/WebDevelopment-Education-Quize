@@ -1,6 +1,14 @@
 project name : Programming Quiz
-project live link : 
-Description : Test your web development knowledge by using this site
+project live link : (https://musical-pie-41f1be.netlify.app/)
+Description : 
+    * Test your web development knowledge by using this web development quiz site
+Feature : 
+* Different types of quiz topics
+* Each topics have multipule quesctions about 'CSS, JS, REACT, GIT'
+* Fully responsive
+* User friendly and easy to use
+* DIfferent types of toster
+* Good color combination
 
 
 

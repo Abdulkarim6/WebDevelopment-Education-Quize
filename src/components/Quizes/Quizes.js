@@ -5,9 +5,7 @@ import './Quizes.css'
 
 const Quizes = () => {
     const quizes = useLoaderData();
-    // console.log(Quizes.data);
     const { name, questions } = quizes.data;
-    // console.log(name, questions);
 
     return (
         <div className='quizes-container'>

@@ -5,7 +5,6 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Quize = ({ ques }) => {
     const { question, options, correctAnswer } = ques;
-    // console.log(ques, question, options);
     const handleShowCorrectAns =() =>{
         toast.success(correctAnswer)
     }

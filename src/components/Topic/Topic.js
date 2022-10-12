@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Topic = ({ quizTopic }) => {
     const { id, logo, name, total } = quizTopic;
-    // console.log(name, total, quizTopic);
 
     return (
         <div className='quizTopic'>
